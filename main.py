@@ -1,8 +1,10 @@
 import os
 import requests
 from twilio.rest import Client
+from dotenv import load_dotenv
 from twilio.http.http_client import TwilioHttpClient
 
+load_dotenv()
 
 OpenWeatherMap_Endpoint = "http://api.openweathermap.org/data/2.5/forecast"
 API_KEY = os.environ.get("OWM_API_KEY")
