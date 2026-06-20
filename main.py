@@ -12,7 +12,7 @@ account_sid = os.environ.get("ACCOUNT_SID")
 auth_token = os.environ.get("AUTH_TOKEN")
 
 weather_params = {
-    "appid": api_key,
+    "appid": os.environ.get("OWM_API_KEY"),
     "lat": MY_LAT,
     "lon": MY_LONG,
     "cnt": 4,
